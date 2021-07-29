@@ -1,6 +1,6 @@
-# Assignment---Scientific Computing using Python-1 (PhD-Python-1)
+# Assignment---Scientific Computing using Python-2 (PhD-Python-2)
 
-The repository containing the project assignment for the PhD course “Scientific Computing using Python, part 1”, held at Aalborg University (June 2021)
+The repository containing the project assignment for the PhD course “Scientific Computing using Python, part 2”, held at Aalborg University (June 2021)
 
 Author: **Mehdi Rafiei Foroushani**
 
