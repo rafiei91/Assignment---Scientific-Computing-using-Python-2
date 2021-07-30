@@ -1,5 +1,9 @@
 import numpy as np
 import time
+import sys
+sys.path.append('../')
+import os
+from Implementation.funcs import Mf
 
 start = time.time()
 ri = 0 # real index
