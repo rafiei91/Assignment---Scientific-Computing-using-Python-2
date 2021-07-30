@@ -4,6 +4,7 @@ import sys
 sys.path.append('../')
 import os
 from code.funcs import Mf_v
+import h5py
 
 start = time.time()
 ri = 0 # real index
@@ -22,3 +23,10 @@ M_out_v = np.transpose(M_out_v)
 end = time.time()
 
 print("The execution time for the Vectorized version is {} seconds.".format(end - start))
+
+if os.path.exists('multiprocessing') is False:
+    os.mkdir('multiprocessing')
+
+f = h5py.File("Implementations" + "/" + multiprocessing + '.hdf5', 'w')
+f.create_dataset('RND', data=M_out_v)
+f.close()
