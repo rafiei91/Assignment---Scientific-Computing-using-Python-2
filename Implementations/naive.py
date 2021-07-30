@@ -5,6 +5,8 @@ sys.path.append('../')
 import os
 from code.funcs import Mf
 import h5py
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 
 start = time.time()
 ri = 0 # real index
@@ -31,3 +33,7 @@ if os.path.exists('naive') is False:
 f = h5py.File("naive/" + 'naive.hdf5', 'w')
 f.create_dataset('RND', data=M_out)
 f.close()
+
+fig, ax = plt.subplots(figsize=(20, 20))
+im = ax.imshow(M_out, cmap=cm.hot, extent=[-2, 1, -1.5, 1.5])
+plt.savefig("naive/" + 'naive.png')
