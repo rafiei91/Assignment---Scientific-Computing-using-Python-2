@@ -13,7 +13,7 @@ r_s = -2 # start point (real)
 r_e = 1 # end point (real)
 i_s = -1.5 # start point (imagenary)
 i_e = 1.5 # end point (imagenary)
-
+core = pickle.load(open("core", "rb"))
 
 if __name__ == '__main__': # We have to use this to make it work in this interactive interpreter
     M_out_p = np.zeros((M_size,M_size))
@@ -22,7 +22,7 @@ if __name__ == '__main__': # We have to use this to make it work in this interac
     aa = list(product(arr1, arr2))
     
     start = time.time()
-    pool = Pool()
+    pool = Pool(core)
     M_out_p = pool.map(Mf_m, aa)
     pool.close()
     pool.join()
