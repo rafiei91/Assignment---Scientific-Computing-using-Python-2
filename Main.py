@@ -1,6 +1,7 @@
 import argparse
 import sys
 import os
+import pickle
 
 parser = argparse.ArgumentParser()
 # Execution selection
@@ -12,9 +13,16 @@ ver = args.version_select
 core = args.core_number
 c = int(core)
 
-if (ver == "naive" or "parallel" or "vectorized" or "multiprocessing"):
+if (ver == "naive" or "parallel" or "vectorized"):
   cwd = os.getcwd()
-  cwd = cwd + "/" + Implementations
+  cwd = cwd + "/" + "Implementations"
+  os.chdir(cwd)
+  file_to_open = ver + ".py"
+  exec(open(file_to_open).read())
+elif ver == "multiprocessing" and core <= 32:
+  pickle.dump(core, open(Implementation/"core", "wb"))
+  cwd = os.getcwd()
+  cwd = cwd + "/" + "Implementations"
   os.chdir(cwd)
   file_to_open = ver + ".py"
   exec(open(file_to_open).read())
