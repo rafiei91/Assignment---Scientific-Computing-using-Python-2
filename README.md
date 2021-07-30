@@ -4,7 +4,7 @@ The repository containing the project assignment for the PhD course “Scientifi
 
 Author: **Mehdi Rafiei Foroushani**
 
-Repository's link: **https://github.com/rafiei91/Assignment---Scientific-Computing-using-Python-1**
+Repository's link: **https://github.com/rafiei91/Assignment---Scientific-Computing-using-Python-2**
 
 ## Program explanation
 
@@ -68,11 +68,11 @@ cd path
 ```
 3. Clone the code on the direction:
 ```
-git clone https://github.com/rafiei91/Assignment---Scientific-Computing-using-Python-1.git
+git clone https://github.com/rafiei91/Assignment---Scientific-Computing-using-Python-2.git
 ```
 4. Go to the cloned representory
 ```
-cd Assignment---Scientific-Computing-using-Python-1
+cd Assignment---Scientific-Computing-using-Python-2
 ```
 5. Make a conda environment:
 ```
@@ -100,5 +100,5 @@ conda install requirements.txt
 
 In order to execute the cases or the test, the below command must be used with some costomizations.
 ```
-python Main.py --code_select case(or test) --case_number 1(or 2, 3, 4, 5 - if the cases are going to be executed)
+python Main.py --version_select naive(or parallel or vectorized or multiprocessing) --core_number 1(up to 32 - if the multiciore is going to be executed)
 ```
