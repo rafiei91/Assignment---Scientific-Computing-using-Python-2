@@ -3,7 +3,7 @@ import time
 import sys
 sys.path.append('../')
 import os
-from Implementation.funcs import Mf
+from code.funcs import Mf
 
 start = time.time()
 ri = 0 # real index
