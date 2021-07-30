@@ -9,6 +9,7 @@ from numba import jit, njit, prange
 from numba import vectorize
 import multiprocessing as mp
 
+@njit(parallel=False)
 def Mf(r, i):
   c = complex(r, i)
   I = 200
@@ -57,7 +58,7 @@ def Mf_m(r):
   return 1
 
 ri = 0 # real index
-M_size = 500 # number of pixcels
+M_size = 2000 # number of pixcels
 r_s = -2 # start point (real)
 r_e = 1 # end point (real)
 i_s = -1.5 # start point (imagenary)
@@ -78,7 +79,7 @@ print("simple: {0}".format(Exe_time))
 
 start = time.time()
 ri = 0 # real index
-M_size = 500 # number of pixcels
+M_size = 2000 # number of pixcels
 r_s = -2 # start point (real)
 r_e = 1 # end point (real)
 i_s = -1.5 # start point (imagenary)
@@ -98,7 +99,7 @@ print("parallel: {0}".format(Exe_time))
 
 start = time.time()
 ri = 0 # real index
-M_size = 500 # number of pixcels
+M_size = 2000 # number of pixcels
 r_s = -2 # start point (real)
 r_e = 1 # end point (real)
 i_s = -1.5 # start point (imagenary)
@@ -115,7 +116,7 @@ Exe_time = end - start
 print("vectorized: {0}".format(Exe_time))
 
 ri = 0 # real index
-M_size = 500 # number of pixcels
+M_size = 2000 # number of pixcels
 r_s = -2 # start point (real)
 r_e = 1 # end point (real)
 i_s = -1.5 # start point (imagenary)
