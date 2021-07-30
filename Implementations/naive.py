@@ -18,5 +18,5 @@ for r in np.arange (r_s, r_e, (r_e - r_s) / M_size):
     ri += 1
 M_out = np.transpose(M_out)
 end = time.time()
-print("The execution time for the NAive version is {} seconds.".format(end - start))
+print("The execution time for the Naive version is {} seconds.".format(end - start))
 
