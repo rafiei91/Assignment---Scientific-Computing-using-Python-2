@@ -27,6 +27,6 @@ print("The execution time for the Vectorized version is {} seconds.".format(end 
 if os.path.exists('vectorized') is False:
     os.mkdir('vectorized')
 
-f = h5py.File("Implementations" + "/" + "vectorized" + '.hdf5', 'w')
+f = h5py.File("Implementations" + "/" + "vectorized" + "vectorized" + '.hdf5', 'w')
 f.create_dataset('RND', data=M_out_v)
 f.close()
