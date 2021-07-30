@@ -6,6 +6,7 @@ import sys
 sys.path.append('../')
 import os
 from code.funcs import Mf_m
+import h5py
 
 ri = 0 # real index
 M_size = 1000 # number of pixcels
@@ -33,3 +34,10 @@ if __name__ == '__main__': # We have to use this to make it work in this interac
     M_out_m = np.transpose(M_out_m)
 
 print("The execution time for the Multiprocessing version is {} seconds.".format(end - start))
+
+if os.path.exists('multiprocessing') is False:
+    os.mkdir('multiprocessing')
+
+f = h5py.File("Implementations" + "/" + multiprocessing + '.hdf5', 'w')
+f.create_dataset('RND', data=M_out_m)
+f.close()
