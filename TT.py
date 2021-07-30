@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import time
 from numba import jit, njit, prange
+from numba import vectorize
+import multiprocessing as mp
 
 @njit(parallel=False)
 def Mf(r, i):
