@@ -9,7 +9,7 @@ from numba import jit, njit, prange
 from numba import vectorize
 import multiprocessing as mp
 
-@njit(parallel=False)
+#@njit(parallel=False)
 def Mf(r, i):
   c = complex(r, i)
   I = 200
