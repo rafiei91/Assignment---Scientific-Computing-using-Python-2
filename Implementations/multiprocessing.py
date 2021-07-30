@@ -2,6 +2,10 @@ import numpy as np
 import time
 from itertools import product
 from multiprocessing import Process, Pool
+import sys
+sys.path.append('../')
+import os
+from code.funcs import Mf_m
 
 ri = 0 # real index
 M_size = 500 # number of pixcels
