@@ -1,4 +1,4 @@
-oriimport numpy as np
+import numpy as np
 import time
 import sys
 sys.path.append('../')
