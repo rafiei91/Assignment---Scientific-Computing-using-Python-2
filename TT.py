@@ -100,7 +100,7 @@ print("parallel: {0}".format(Exe_time))
 
 start = time.time()
 ri = 0 # real index
-M_size = 5000 # number of pixcels
+M_size = 500 # number of pixcels
 r_s = -2 # start point (real)
 r_e = 1 # end point (real)
 i_s = -1.5 # start point (imagenary)
@@ -132,6 +132,7 @@ if __name__ == '__main__': # We have to use this to make it work in this interac
     
     start = time.time()
     pool = Pool()
+    print(pool)
     M_out_p = pool.map(Mf_m, aa)
     pool.close()
     pool.join()
