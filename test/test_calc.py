@@ -7,7 +7,7 @@ from scipy.integrate import solve_ivp
 import numpy as np
 import cmath
 
-import code
+import code_f
 
 start = time.time()
 
@@ -39,7 +39,7 @@ class TestMethod(unittest.TestCase):
             ii = 0 # imagenary index
             for i in np.arange (i_s, i_e, (i_e - i_s) / M_size):
                 M_out_t[ri, ii] = Mf_t (r, i)
-                M_out[ri, ii] = code.funcs.Mf (r, i)
+                M_out[ri, ii] = code_f.funcs.Mf (r, i)
                 ii += 1
             ri += 1
-        self.assertEqual(M_out_t, M_out)
+        assert np.allclose(M_out_t, M_out)
