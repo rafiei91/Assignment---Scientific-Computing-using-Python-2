@@ -4,6 +4,7 @@ import sys
 sys.path.append('../')
 import os
 from code.funcs import Mf
+import h5py
 
 start = time.time()
 ri = 0 # real index
@@ -24,3 +25,9 @@ M_out = np.transpose(M_out)
 end = time.time()
 print("The execution time for the Naive version is {} seconds.".format(end - start))
 
+if os.path.exists('naive') is False:
+    os.mkdir('naive')
+
+f = h5py.File("naive/" + 'naive.hdf5', 'w')
+f.create_dataset('RND', data=M_out)
+f.close()
