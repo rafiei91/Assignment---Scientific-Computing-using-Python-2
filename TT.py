@@ -9,7 +9,6 @@ from numba import jit, njit, prange
 from numba import vectorize
 import multiprocessing as mp
 
-@njit(parallel=False)
 def Mf(r, i):
   c = complex(r, i)
   I = 200
@@ -46,8 +45,7 @@ def Mf_v(r, i):
         return (i+1)/I
   return 1
 
-njit(parallel=False)
-def _Mf_m(r):
+def Mf_m(r):
   c = complex(r[0], r[1])
   I = 200
   z = [complex(0, 0) for i in range(I+1) ]
@@ -133,7 +131,7 @@ if __name__ == '__main__': # We have to use this to make it work in this interac
     start = time.time()
     pool = Pool()
     print(pool)
-    M_out_p = pool.map(_Mf_m, aa)
+    M_out_p = pool.map(Mf_m, aa)
     pool.close()
     pool.join()
     end = time.time()
