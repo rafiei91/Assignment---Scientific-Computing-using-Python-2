@@ -13,7 +13,7 @@ ver = args.version_select
 core = args.core_number
 c = int(core)
 
-if (ver == "naive" or "parallel" or "vectorized"):
+if ver == "naive" or ver == "parallel" or ver == "vectorized":
   cwd = os.getcwd()
   cwd = cwd + "/" + "Implementations"
   os.chdir(cwd)
