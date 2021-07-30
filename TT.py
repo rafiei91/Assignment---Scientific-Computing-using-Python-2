@@ -47,7 +47,7 @@ def Mf_v(r, i):
   return 1
 
 njit(parallel=False)
-def Mf_m(r):
+def _Mf_m(r):
   c = complex(r[0], r[1])
   I = 200
   z = [complex(0, 0) for i in range(I+1) ]
@@ -133,7 +133,7 @@ if __name__ == '__main__': # We have to use this to make it work in this interac
     start = time.time()
     pool = Pool()
     print(pool)
-    M_out_p = pool.map(Mf_m, aa)
+    M_out_p = pool.map(_Mf_m, aa)
     pool.close()
     pool.join()
     end = time.time()
