@@ -5,6 +5,8 @@ sys.path.append('../')
 import os
 from code.funcs import Mf_p
 import h5py
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 
 start = time.time()
 ri = 0 # real index
@@ -31,3 +33,7 @@ if os.path.exists('parallel') is False:
 f = h5py.File("parallel/" + 'parallel.hdf5', 'w')
 f.create_dataset('RND', data=M_out_p)
 f.close()
+
+fig, ax = plt.subplots(figsize=(20, 20))
+im = ax.imshow(M_out_p, cmap=cm.hot, extent=[-2, 1, -1.5, 1.5])
+plt.savefig("parallel/" + 'parallel.png')
