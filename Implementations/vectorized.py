@@ -7,7 +7,7 @@ from code.funcs import Mf_v
 
 start = time.time()
 ri = 0 # real index
-M_size = 5000 # number of pixcels
+M_size = 1000 # number of pixcels
 r_s = -2 # start point (real)
 r_e = 1 # end point (real)
 i_s = -1.5 # start point (imagenary)
