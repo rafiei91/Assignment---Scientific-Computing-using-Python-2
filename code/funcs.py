@@ -2,14 +2,8 @@
 The Mandelbrot set is coded here in 4 different implementation style. Each function recieves a complex input and return the belongness index.
 """
 
-import numpy as np
 import cmath
-from itertools import product
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-from numba import jit, njit, prange, vectorize
-import multiprocessing as mp
-from multiprocessing import Process, Lock, Pool
+from numba import jit, njit, vectorize
 
 # Naive implementation
 def Mf(r, i):
