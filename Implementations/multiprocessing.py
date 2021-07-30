@@ -38,6 +38,6 @@ print("The execution time for the Multiprocessing version is {} seconds.".format
 if os.path.exists('multiprocessing') is False:
     os.mkdir('multiprocessing')
 
-f = h5py.File("Implementations" + "/" + multiprocessing + '.hdf5', 'w')
+f = h5py.File("multiprocessing/" + 'multiprocessing.hdf5', 'w')
 f.create_dataset('RND', data=M_out_m)
 f.close()
