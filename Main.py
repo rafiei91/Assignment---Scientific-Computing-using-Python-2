@@ -20,10 +20,10 @@ if (ver == "naive" or "parallel" or "vectorized"):
   file_to_open = ver + ".py"
   exec(open(file_to_open).read())
 elif ver == "multiprocessing" and core <= 32:
-  pickle.dump(core, open(Implementation/"core", "wb"))
   cwd = os.getcwd()
   cwd = cwd + "/" + "Implementations"
   os.chdir(cwd)
+  pickle.dump(core, open("core", "wb"))
   file_to_open = ver + ".py"
   exec(open(file_to_open).read())
 elif ver == "test":
