@@ -70,7 +70,7 @@ cd path
 ```
 git clone https://github.com/rafiei91/Assignment---Scientific-Computing-using-Python-2.git
 ```
-4. Go to the cloned representory
+4. Go to the cloned repository
 ```
 cd Assignment---Scientific-Computing-using-Python-2
 ```
