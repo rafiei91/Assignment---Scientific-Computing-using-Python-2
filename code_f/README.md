@@ -17,4 +17,4 @@ The defined functions here are:
 
 ## \__init__
 
-This file is made to make it possible to import the _Mf_ code in the test code.
+This file is made to make it possible to import the _Mf_ function in the test code.
