@@ -18,46 +18,35 @@ As it can be seen in the tree view of the directory, the repository includes 3 f
 
 The text files include the "requirement.txt" file that has the required tools to be installed for the main code execution and the "README.md" file that is these notes.
 
-Among the folders, the case folder includes 5 case codes that represent all 5 defined cases on the project with different parameters, and also has one "\__init__\" file which is used to import the defined function in case1 on the testing phase.
+Among the folders, the implementation folder includes 4 version codes that represent the problem with different implementation methods.
 
-The other folder is "lorenz" one that includes the required lorenz related codes to solve the problem, save the results, and plot the outputs.
+The other folder is "code_f" one that has the functions to achieve the Mandelbrot set for all 4 implementation methods, and also has one "\__init__\" file which is used to import the defined function in naive on the testing phase.
 
 Finally, the last folder contains the "test" code.
 
 Also, in each folder, anoder README file is provided to explain the functions (inputs, outputs, and any other relevent explanation).
 
-Also, in order to have an easy and straightforward execution, a "Main.py" code file is made to run it with the required input and do the ODE solvation on each case or do the test.
+Also, in order to have an easy and straightforward execution, a "Main.py" code file is made to run it with the required input and achieve the Mandelbrot set on each implementation method or do the test.
 
 ```bash
 │   Main.py
 │   README.md
 │   requirements.txt
-│
-├───case
-│       case1.py
-│       case2.py
-│       case3.py
-│       case4.py
-│       case5.py
-│       README.md
+├───code_f
+│       funcs.py
 │       __init__.py
-│
-├───lorenz
-│       filehandling.py
-│       plot.py
-│       README.md
-│       run.py
-│       solver.py
-│       __init__.py
-│
+├───Implementations
+│       multiprocessing.py
+│       naive.py
+│       parallel.py
+│       vectorized.py
 └───test
-        README.md
-        test.py
+        test_calc.py
 ```
 
 ## Implementation
 
-Firstly, it should be mentioned that the provided guide is for implementation on windows.
+Firstly, it should be mentioned that the provided guide is for implementation on Linux. (Windows implementation might face problems in multi-process version)
 
 ### Preparation
 
