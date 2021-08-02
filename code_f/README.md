@@ -14,3 +14,7 @@ The defined functions here are:
 - _Mf_p_ : for Parallel version
 - _Mf_v_ : for Vectorised version
 - _Mf_m_ : for Multi-processing version
+
+## \__init__
+
+This file is made to make it possible to import the _Mf_ code in the test code.
