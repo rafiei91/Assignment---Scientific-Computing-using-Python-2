@@ -5,7 +5,7 @@ from multiprocessing import Process, Pool
 import sys
 sys.path.append('../')
 import os
-from code.funcs import Mf_m
+from code_f.funcs import Mf_m
 import h5py
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
