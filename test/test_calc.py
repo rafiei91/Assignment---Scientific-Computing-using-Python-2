@@ -3,7 +3,6 @@ sys.path.append('../')
 
 import time
 import unittest
-from scipy.integrate import solve_ivp
 import numpy as np
 import cmath
 
