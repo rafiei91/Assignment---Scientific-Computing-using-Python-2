@@ -1,27 +1,16 @@
-# Lorenz
+# code_f
 
-This file includes the codes related to solving the ODE problem, and saves and plots the results.
+This file includes the code related to defining the functions to assess if the input belongs to the Mandelbrot set.
 
-The explanation regarding each code is as below:
+The explanation regarding code is as below:
 
-## run
+## funcs
 
-This file includes the _execute_ function that is called by the _case_ files to receive the differential equations and the initial conditions.
+This file includes the functionf that is called by the implementation codes to receive a complex point and calculate the index of belonging to the Mandelbrot set.
 
-After receiving the differential equations and the initial conditions, the _execute_ function call the _ode_solver_ function (defined in solver) to solve the ODE problem.
+The defined functions here are:
 
-Then, the outputs are given to the _saveing_ (defined in filehandling), and _plot_2D_ and _plot_3D_ (defined in plot) to save and plot the results, respectively.
-
-## solver
-
-This file includes the _ode_solver_ function that gets the ODEs, initial conditions, and steps details, and uses the simple Newton Euler algorithm to solve the model. 
-
-The output is the solving results along with the related time points to them.
-
-## filehandling
-
-This file includes the _saveing_ function that gets the solver's results and the case number, then saves the results in hdf5 format.
-
-## plot
-
-This file includes two _plot_2D_ and _plot_3D_ functions that each receives solver's results and the case number, then plot and save them in 2D and 3D in pdf format.
+- _Mf_ : for Naive version
+- _Mf_p_ : for Parallel version
+- _Mf_v_ : for Vectorised version
+- _Mf_m_ : for Multi-processing version
