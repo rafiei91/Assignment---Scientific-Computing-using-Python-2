@@ -8,7 +8,7 @@ Repository's link: **https://github.com/rafiei91/Assignment---Scientific-Computi
 
 ## Program explanation
 
-The program is developed to achive the Mandelbrot set in a complex domain. 
+The program is developed to acheive the Mandelbrot set in a complex domain. 
 
 The program did it for a range of input from -2 to 1 in real space and from -1.5 to 1.5 in imagenary space. Four different versions of implementations have been used in this regard (Naive, Parallel, Vectorized, and multi-processing).
 
