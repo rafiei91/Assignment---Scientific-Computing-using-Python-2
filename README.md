@@ -8,9 +8,9 @@ Repository's link: **https://github.com/rafiei91/Assignment---Scientific-Computi
 
 ## Program explanation
 
-The program is developed to solve the Lorenz attractor model that is based on three coupled first order Ordinary Differential Equations (ODEs). 
+The program is developed to achive the Mandelbrot set in a complex domain. 
 
-The program solve it by use of simple Newton Euler algorithm for 5 different parameters values, known as case1 to case5. Also, a testing is provided for the code.
+The program did it for a range of input from -2 to 1 in real space and from -1.5 to 1.5 in imagenary space. Four different versions of implementations have been used in this regard (Naive, Parallel, Vectorized, and multi-processing).
 
 ## Files & Folders
 
