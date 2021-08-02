@@ -6,8 +6,8 @@ The testing presedure is done on the Naive version.
 
 The output of two functions are compared:
 
-1- the Mf function that was defined in /code_f/funcs , that is called here;
-2- the Mf_t function that is defined in the test code.
+1. the Mf function that was defined in /code_f/funcs , that is called here;
+2. the Mf_t function that is defined in the test code.
 
 And then, with the same process that has been done in the "naive" code, is done in testing phase. Just for each complex point, they have been sent for both Mf and Mf_t functions.
 ```
