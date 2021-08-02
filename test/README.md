@@ -2,7 +2,7 @@
 
 This file uses _unittest_ method to test the code.
 
-The testing presedure is done on the Naive version.
+The testing procedure is done on the Naive version.
 
 The output of two functions are compared:
 
