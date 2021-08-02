@@ -3,7 +3,7 @@ import time
 import sys
 sys.path.append('../')
 import os
-from code.funcs import Mf_v
+from code_f.funcs import Mf_v
 import h5py
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
