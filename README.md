@@ -34,13 +34,16 @@ Also, in order to have an easy and straightforward execution, a "Main.py" code f
 │   requirements.txt
 ├───code_f
 │       funcs.py
+│       README.md
 │       __init__.py
 ├───Implementations
 │       multiprocessing.py
 │       naive.py
 │       parallel.py
+│       README.md
 │       vectorized.py
 └───test
+        README.md
         test_calc.py
 ```
 
