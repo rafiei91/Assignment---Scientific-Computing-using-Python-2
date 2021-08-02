@@ -24,7 +24,7 @@ The other folder is "code_f" one that has the functions to achieve the Mandelbro
 
 Finally, the last folder contains the "test" code.
 
-Also, in each folder, anoder README file is provided to explain the functions (inputs, outputs, and any other relevent explanation).
+Also, in each folder, another README file is provided to explain the functions (inputs, outputs, and any other relevant explanation).
 
 Also, in order to have an easy and straightforward execution, a "Main.py" code file is made to run it with the required input and achieve the Mandelbrot set on each implementation method or do the test.
 
