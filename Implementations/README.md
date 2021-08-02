@@ -1,15 +1,7 @@
-# Case
+# Implementation
 
-## case1 to case5
+This folder contains 4 codes regarding the 4 implementation versions.
 
-This folder contains 5 codes regarding the 5 parameter cases.
+Each code, at first, define the required parameters ans then send the complex points to the related function (defined in /code_f/funcs.py).
 
-Each code includes a function defining the Lorenz attraction ode with the related parameters to the case number. This function returns the differential equations.
-
-Then, the path to save the results is created.
-
-Finally, the function _execute_ (defined in lorenz/run) is called and the defined ODE function, initial conditions, and the case name are given to it as its inputs.
-
-## \__init__
-
-This file is made to make it possible to import the _case1_ code in the test code.
+Finally, after showing the execution time, the code makes a folder and saves the obtained data and the image there.
